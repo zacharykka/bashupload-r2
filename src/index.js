@@ -88,7 +88,7 @@ export default {
         const userAgent = request.headers.get('user-agent') || '';
         if (userAgent.toLowerCase().includes('curl')) {
           // 如果是 curl，返回简单的文本说明
-          return new Response(`bashupload.app - 一次性文件分享服务\n\n使用方法 Usage:\n  curl bashupload.app -T file.txt          # 返回普通链接 / Normal URL\n  curl bashupload.app/short -T file.txt    # 返回短链接 / Short URL\n\n特性 Features:\n  • 文件只能下载一次 / Files can only be downloaded once\n  • 下载后自动删除 / Auto-delete after download\n  • 保护隐私安全 / Privacy protection\n`, {
+          return new Response(`upload.xhhh.de - 一次性文件分享服务\n\n使用方法 Usage:\n  curl upload.xhhh.de -T file.txt          # 返回普通链接 / Normal URL\n  curl upload.xhhh.de/short -T file.txt    # 返回短链接 / Short URL\n\n特性 Features:\n  • 文件只能下载一次 / Files can only be downloaded once\n  • 下载后自动删除 / Auto-delete after download\n  • 保护隐私安全 / Privacy protection\n`, {
             status: 200,
             headers: { 'Content-Type': 'text/plain; charset=utf-8' },
           });
